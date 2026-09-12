@@ -1,6 +1,12 @@
 @import "https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500&display=swap";
 @import "tailwindcss";
 
+body {
+  background-color: var(--color-surface-page);
+  color: var(--color-text-default);
+  min-height: 100vh;
+}
+
 @theme {
   /* COLORS:START */
   --color-text-default: #362e26;
@@ -9,8 +15,8 @@
   --color-surface-page: #FFFFFF;
   --color-surface-card: #f7f5f2;
   --color-surface-accent: #fbe4e3;
-  --color-brand-primary: #7690c0;
-  --color-brand-hover: #5b76a3;
+  --color-brand-primary: #5e8b7e;
+  --color-brand-hover: #486a5f;
   --color-feedback-error: #7d4342;
   --color-feedback-warning: #ab6852;
   --color-feedback-success: #5e8b7e;
@@ -48,7 +54,7 @@
 
 /* Dark mode — color tokens only, typography/spacing/radius stay the same */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     /* COLORS:START */
     --color-text-default: #f7f5f2;
     --color-text-muted: #c9bcac;
@@ -56,11 +62,28 @@
     --color-surface-page: #362e26;
     --color-surface-card: #524739;
     --color-surface-accent: #916665;
-    --color-brand-primary: #a7b9dc;
-    --color-brand-hover: #c1cee6;
+    --color-brand-primary: #7aad9c;
+    --color-brand-hover: #a0c8ba;
     --color-feedback-error: #c37c78;
     --color-feedback-warning: #dd9578;
     --color-feedback-success: #7aad9c;
     /* COLORS:END */
   }
+}
+
+/* Storybook theme toolbar — explicit override regardless of system appearance */
+:root[data-theme="dark"] {
+  /* COLORS-TOGGLE:START (keep in sync with the dark block above) */
+  --color-text-default: #f7f5f2;
+  --color-text-muted: #c9bcac;
+  --color-text-inverse: #362e26;
+  --color-surface-page: #362e26;
+  --color-surface-card: #524739;
+  --color-surface-accent: #916665;
+  --color-brand-primary: #7aad9c;
+  --color-brand-hover: #a0c8ba;
+  --color-feedback-error: #c37c78;
+  --color-feedback-warning: #dd9578;
+  --color-feedback-success: #7aad9c;
+  /* COLORS-TOGGLE:END */
 }

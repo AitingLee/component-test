@@ -88,8 +88,8 @@
         "accent": "{palette.rose-quartz.300}"
       },
       "brand": {
-        "primary": "{palette.serenity.600}",
-        "hover": "{palette.serenity.700}"
+        "primary": "{palette.beryl-green.600}",
+        "hover": "{palette.beryl-green.700}"
       },
       "feedback": {
         "error": "{palette.marsala.600}",
@@ -109,8 +109,8 @@
         "accent": "{palette.rose-quartz.800}"
       },
       "brand": {
-        "primary": "{palette.serenity.400}",
-        "hover": "{palette.serenity.300}"
+        "primary": "{palette.beryl-green.400}",
+        "hover": "{palette.beryl-green.300}"
       },
       "feedback": {
         "error": "{palette.marsala.400}",

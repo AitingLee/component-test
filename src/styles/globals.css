@@ -1,34 +1,46 @@
+@import "https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500&display=swap";
 @import "tailwindcss";
 
 @theme {
   /* COLORS:START */
+  --color-text-default: #362e26;
+  --color-text-muted: #8e7d68;
+  --color-text-inverse: #FFFFFF;
+  --color-surface-page: #FFFFFF;
+  --color-surface-card: #f7f5f2;
+  --color-surface-accent: #fbe4e3;
+  --color-brand-primary: #7690c0;
+  --color-brand-hover: #5b76a3;
+  --color-feedback-error: #7d4342;
+  --color-feedback-warning: #ab6852;
+  --color-feedback-success: #5e8b7e;
   /* COLORS:END */
 
   /* Typography
      font-display, font-body */
-  --font-display: ;
-  --font-body: ;
+  --font-display: "Fraunces";
+  --font-body: "Inter";
 
   /* Spacing
      p-2xs, p-sm, m-md, gap-lg ... */
-  --spacing-2xs: ;
-  --spacing-xs: ;
-  --spacing-sm: ;
-  --spacing-md: ;
-  --spacing-lg: ;
-  --spacing-xl: ;
-  --spacing-2xl: ;
-  --spacing-3xl: ;
+  --spacing-2xs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
   /* Semantic spacing, e.g. --spacing-card-padding */
   /* SPACING:START */
   /* SPACING:END */
 
   /* Border Radius
      rounded-sm, rounded-md ... */
-  --radius-sm: ;
-  --radius-md: ;
-  --radius-lg: ;
-  --radius-xl: ;
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
+  --radius-xl: 60px;
   /* Semantic radius, e.g. --radius-button */
   /* RADIUS:START */
   /* RADIUS:END */
@@ -38,6 +50,17 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* COLORS:START */
+    --color-text-default: #f7f5f2;
+    --color-text-muted: #c9bcac;
+    --color-text-inverse: #362e26;
+    --color-surface-page: #362e26;
+    --color-surface-card: #524739;
+    --color-surface-accent: #916665;
+    --color-brand-primary: #a7b9dc;
+    --color-brand-hover: #c1cee6;
+    --color-feedback-error: #c37c78;
+    --color-feedback-warning: #dd9578;
+    --color-feedback-success: #7aad9c;
     /* COLORS:END */
   }
 }

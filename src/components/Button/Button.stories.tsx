@@ -23,30 +23,30 @@ type Story = StoryObj<typeof Button>
 export const Primary: Story = {
   args: {
     variant: 'primary',
-    children: '確認',
+    children: 'Confirm',
   },
 }
 
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
-    children: '取消',
+    children: 'Cancel',
   },
 }
 
 export const Ghost: Story = {
   args: {
     variant: 'ghost',
-    children: '更多選項',
+    children: 'More options',
   },
 }
 
 export const AllSizes: Story = {
   render: () => (
     <div className="flex items-center gap-4">
-      <Button size="sm">小按鈕</Button>
-      <Button size="md">中按鈕</Button>
-      <Button size="lg">大按鈕</Button>
+      <Button size="sm">Small</Button>
+      <Button size="md">Medium</Button>
+      <Button size="lg">Large</Button>
     </div>
   ),
 }

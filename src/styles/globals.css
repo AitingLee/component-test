@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* COLORS:START */
+  /* COLORS:END */
+
+  /* Typography
+     font-display, font-body */
+  --font-display: ;
+  --font-body: ;
+
+  /* Spacing
+     p-2xs, p-sm, m-md, gap-lg ... */
+  --spacing-2xs: ;
+  --spacing-xs: ;
+  --spacing-sm: ;
+  --spacing-md: ;
+  --spacing-lg: ;
+  --spacing-xl: ;
+  --spacing-2xl: ;
+  --spacing-3xl: ;
+  /* Semantic spacing, e.g. --spacing-card-padding */
+  /* SPACING:START */
+  /* SPACING:END */
+
+  /* Border Radius
+     rounded-sm, rounded-md ... */
+  --radius-sm: ;
+  --radius-md: ;
+  --radius-lg: ;
+  --radius-xl: ;
+  /* Semantic radius, e.g. --radius-button */
+  /* RADIUS:START */
+  /* RADIUS:END */
+}
+
+/* Dark mode — color tokens only, typography/spacing/radius stay the same */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* COLORS:START */
+    /* COLORS:END */
+  }
+}

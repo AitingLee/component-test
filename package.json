@@ -1,6 +1,6 @@
 {
   "name": "@aitinglee/component-kit-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A vibe-coded component library built with Claude Code",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
